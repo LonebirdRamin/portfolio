@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans);
+@import url(https://fonts.googleapis.com/css2?family=Inter);
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', 'Inter';
+    font-size: 1vw;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #303031;
+    width: 100%;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    height: 8dvh;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #141415, #1E1E1F);
+}
+
+.navbox{
+    display: flex;
+    height: 100%;
+    width: 15vw;
+    text-align: center;
+}
+
+.navbox a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbox:hover{
+    background-color: azure;
+}
+
+.navbox:hover a{
+    color: #303031;
+}
+
+.image_container{
+    position: relative;
+    width: max-content;
+    overflow-x: hidden;
+}
+
+#self-images{
+    overflow: hidden;
+    font-size: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap;
+}
+
+.self_image{
+    overflow-x: hidden;
+    height: calc(100dvh - 8dvh);
+    width: 100vw;
+    object-fit: cover;
+}
+
+#introduction{
+    height: calc(100dvh - 8dvh);
+    width: 100%;
+}
