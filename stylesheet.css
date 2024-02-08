@@ -187,13 +187,12 @@ body{
 .soft_skill_box,
 .technical_skill_box{
     height: calc(70dvh - 5rem);
-    border: 2px transparent;
     background-color: white;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+    margin-inline: 5rem;
+    border-radius: 2rem;
 }
 
 .soft_skill_box h2,
@@ -202,16 +201,4 @@ body{
     font-weight: 700;
     text-align: center;
     color: #000;
-}
-
-.technical_skill_box{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-left: hsla(0, 0%, 0%, 0.3) solid 2px;
-}
-
-.soft_skill_box{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-right: hsla(0, 0%, 0%, 0.3) solid 2px;
 }
